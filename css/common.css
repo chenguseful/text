@@ -75,7 +75,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 0 4px;
+  padding: 0 8px;
   line-height: 16px;
 }
 
@@ -186,18 +186,17 @@ body {
 .table-body {
   position: absolute;
   top: 40px;
-  left: 4px;
-  right: 4px;
+  left: 8px;
+  right: 8px;
   bottom: 0;
-  overflow: hidden;
 }
 
 .table-body-box {
   height: 100%;
   overflow-x: hidden;
   overflow-y: scroll;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  /* scrollbar-width: none;
+  -ms-overflow-style: none; */
 }
 
 .layui-card-body .table-1 tbody tr td {
@@ -229,9 +228,9 @@ body {
   width: 40px;
 }
 
-.table-body-box::-webkit-scrollbar {
+/* .table-body-box::-webkit-scrollbar {
   display: none;
-}
+} */
 
 .grid-name {
   height: 32px;
