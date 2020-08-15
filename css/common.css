@@ -1,0 +1,393 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.gc-main-box {
+  position: relative;
+  height: 100%;
+  background: #f7fafb;
+}
+
+.gc-top-box {
+  padding-left: 24px;
+  height: 64px;
+  line-height: 64px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  background: #007aff;
+}
+
+.gc-center-box {
+  position: absolute;
+  top: 88px;
+  right: 24px;
+  left: 0;
+  bottom: 0;
+}
+
+.gc-main-1,
+.gc-main-2 {
+  float: left;
+  padding-left: 24px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.gc-main-1 {
+  width: 28.85%;
+}
+
+.gc-main-2 {
+  position: relative;
+  width: 42.3%;
+}
+
+.gc-item {
+  position: relative;
+  height: 33.33%;
+}
+
+.gc-item-box,
+.gc-tip-box,
+.gc-map-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 24px;
+}
+
+.gc-item-box .gui-card {
+  height: 100%;
+}
+
+.gui-card .layui-card-header {
+  border: none;
+}
+
+.layui-card-body {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 4px;
+  line-height: 16px;
+}
+
+.gc-tip {
+  position: relative;
+  height: 145px;
+}
+
+.gc-tip-box .layui-col-xs6 {
+  height: 100%;
+}
+
+.grid-1 {
+  display: block;
+  position: relative;
+  margin-right: 12px;
+  padding: 12px 24px;
+  height: 100%;
+  color: #fff;
+  background: #1dc9b7;
+  border-radius: 3px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.grid-1:hover,
+.grid-2:hover {
+  color: #333;
+  background: #fff;
+}
+
+.grid-1::after,
+.grid-2::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  width: 40px;
+  height: 40px;
+  transform: translateY(-50%);
+}
+
+.grid-1::after {
+  background: url('../images/icon_set.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.grid-1:hover::after {
+  background: url('../images/hover_set.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.grid-2 {
+  display: block;
+  position: relative;
+  margin-left: 12px;
+  padding: 12px 24px;
+  height: 100%;
+  color: #fff;
+  background: #ffb822;
+  border-radius: 3px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.grid-2::after {
+  background: url('../images/icon_que.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.grid-2:hover::after {
+  background: url('../images/hover_que.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.gc-map {
+  position: absolute;
+  top: 145px;
+  left: 24px;
+  right: 0;
+  bottom: 0;
+}
+
+.gc-map-box {
+  background: url('../images/map_bg.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.charts {
+  height: 100%;
+}
+
+.layui-card-body .table-1 {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.layui-card-body .table-1 thead tr th {
+  padding: 0 1px;
+  height: 40px;
+  font-size: 12px;
+  color: #77838f;
+  font-weight: normal;
+  background: #f5f8fd;
+  box-sizing: border-box;
+}
+
+.table-body {
+  position: absolute;
+  top: 40px;
+  left: 4px;
+  right: 4px;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.table-body-box {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.layui-card-body .table-1 tbody tr td {
+  font-size: 12px;
+  color: #77838f;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.percent {
+  color: #333;
+}
+
+.score {
+  display: inline-block;
+  width: 32px;
+  height: 16px;
+  line-height: 16px;
+  color: #fff;
+  background: #007aff;
+  border-radius: 16px;
+}
+
+.layui-card-body .table-1 thead tr th:first-child,
+.layui-card-body .table-1 tbody tr td:first-child,
+.layui-card-body .table-1 thead tr th:last-child,
+.layui-card-body .table-1 tbody tr td:last-child {
+  width: 40px;
+}
+
+.table-body-box::-webkit-scrollbar {
+  display: none;
+}
+
+.grid-name {
+  height: 32px;
+  font-size: 14px;
+  line-height: 32px;
+}
+
+.grid-num {
+  height: 40px;
+  line-height: 40px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.grid-index {
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+}
+
+.grid-index span {
+  position: relative;
+  left: 12px;
+}
+
+.grid-index-down::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  right: -20px;
+  width: 10px;
+  height: 10px;
+  background: url('../images/arrow_down.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.gc-map-search {
+  position: relative;
+  height: 80px;
+}
+
+.search-box {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  height: 32px;
+}
+
+.search-box input {
+  float: left;
+  padding-left: 8px;
+  width: 160px;
+  height: 100%;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.search-box input::placeholder {
+  color: #abb2bb;
+}
+
+.search-box button {
+  float: left;
+  width: 48px;
+  height: 100%;
+  color: #fff;
+  background: #007aff;
+  border: none;
+  cursor: pointer;
+}
+
+.gc-map-main {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.map {
+  height: 100%;
+}
+
+.map-al {
+  position: absolute;
+  top: 42.7%;
+  left: 49.4%;
+  width: 351px;
+  height: 143px;
+  transform: translate(-344px, -106px);
+  background: url('../images/al_box.png') no-repeat;
+  background-size: 100% 100%;
+  z-index: 9;
+}
+
+.map-alt {
+  padding: 16px 8px 8px;
+  width: 259px;
+  height: 141px;
+  color: #36474f;
+  box-sizing: border-box;
+}
+
+.map-alt-item-1 {
+  float: left;
+  position: relative;
+  padding-top: 32px;
+  width: 45%;
+  height: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.map-alt-item-1::after {
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: 0;
+  bottom: 16px;
+  width: 1px;
+  background: #f1f2f3;
+}
+
+.map-alt-item-1 span {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.map-alt-item-1 p {
+  font-size: 12px;
+}
+
+.map-alt-item-2 {
+  float: left;
+  position: relative;
+  top: 10%;
+  left: 5%;
+  width: 55%;
+  height: 80%;
+}
+
+.map-alt-item-2 table {
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  color: #77838f;
+}
+
+.map-alt-item-2 table tr td:first-child {
+  padding-right: 16px;
+  text-align: right;
+}
+
+.map-alt-item-2 table span {
+  margin-right: 4px;
+  color: #36474f;
+  font-weight: bold;
+}
